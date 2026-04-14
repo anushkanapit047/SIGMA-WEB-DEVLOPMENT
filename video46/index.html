@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        .container{
+          background-color: rgb(37, 15, 204);
+          height: 80vh;
+          width: 30vw;
+          
+        }
+
+        .container1{
+          background-color: blue;
+          height: 80vh;
+          width: 30vw;
+          margin-left:  1000px;
+          
+
+        }
+
+
+        
+
+        .box{
+            width: 34px;
+            height: 45px;
+            background-color: rgb(203, 8, 8);
+            animation-name: identifier;
+            animation-duration: 7s;
+            animation-iteration-count: infinite;
+            animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+            animation-delay: 1;
+            font-size: larger;
+            color: brown;
+            font-style: italic;
+            font-weight: bolder;
+        
+            animation-direction: normal;
+            
+        }
+
+        @keyframes identifier {
+            from{
+                    background-color: yellow;
+            }
+            to{
+                background-color: brown;
+                transform: translateX(1000px);
+            }
+        }
+
+        @keyframes anushka{
+            0%{
+                transform: rotate(100deg);
+            }
+
+            20%{
+                transform: rotate(200deg);
+            }
+
+            30%{
+                transform: rotate(120deg);
+            }
+
+            80%{
+                transform: rotate(220deg);
+            }
+
+            100%{
+                transform: rotate(300deg);
+            }
+        }
+
+        .box1{
+             width: 34px;
+            height: 45px;
+            background-color: rgb(221, 34, 17);
+            /* animation-name: identifier;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+            animation-delay: 1s;
+            font-size: larger;
+            color: brown;
+            font-style: italic;
+            font-weight: bolder;
+        
+            animation-direction: alternate-reverse;
+            animation-play-state: running; */
+            animation: identifier 2s ease-in-out 1s 1,
+                       anushka 3s ease-in-out 3s infinite; 
+        }
+
+       
+
+    </style>
+</head>
+<body>
+    
+    
+    <div class="container">
+       <ul>
+        <li><div class="box">
+            
+        </div></li>
+
+    
+    
+      <li>  <div class="container1">
+            <div class="box1"></div></li>
+        
+    </ul>
+</body>
+</html>

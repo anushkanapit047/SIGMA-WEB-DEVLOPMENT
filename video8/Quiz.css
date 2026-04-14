@@ -1,0 +1,42 @@
+lable{
+    background-color: rgb(147, 181, 245);
+    
+}
+
+
+input{
+    background-color: rgb(249, 252, 206);
+}
+
+h1{
+    background-color: aqua;
+}
+
+input{
+    padding-left: 50px;
+    margin-bottom: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+lable{
+      margin-right: 30px;
+}
+
+#usercity{
+    margin-left: 51px;
+}
+
+#userpincode{
+    margin-left: 18.2px;
+    margin-bottom: 0;
+    
+}
+
+form{
+    border: solid rgb(7, 1, 1);
+    margin: 124.5px;
+
+    
+
+}

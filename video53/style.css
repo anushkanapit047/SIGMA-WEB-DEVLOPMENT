@@ -1,0 +1,238 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,600&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: black;
+}
+
+
+
+
+.main{
+    background-image: url(assets/bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px 90px);
+    height: 80vh;
+    position: relative;
+}
+
+.main .box{
+    height: 80vh;
+    width: 100%;
+    opacity: 0.66;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+
+nav {
+    max-width: 70vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+
+    
+}
+
+nav img{
+    color: rgb(199, 36, 36);
+    width: 114px;
+    position: relative;
+    z-index: 10;
+    
+}
+
+nav button{
+    position: relative;
+    z-index: 10;
+    
+}
+
+.hero{
+    
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+
+    height: calc(100% - 62px);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+    color: white;
+    font-size: larger;
+    position: relative;
+    gap: 10px;
+    padding:  0 29px;
+    text-align: center;
+    padding: 23px;
+}
+
+.hero> :nth-child(1){
+    font-weight: 900;
+    font-size: 30px;
+    text-align: center;
+    text-align: center;
+}
+
+.hero> :nth-child(2){
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    text-align: center;
+}
+
+.hero> :nth-child(3){
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    text-align: center;
+}
+
+.separation{
+    height: 5px;
+    background-color: rgb(96, 95, 95);
+}
+
+.btn{
+    padding: 8px 40px;
+    font-weight: 100px;
+    color: lch(100% 0.01 296.81);
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: larger;
+    background-color: rgba(248, 243, 243, 0)
+    
+    
+
+}
+
+.btn-red{
+    background-color: rgb(255, 0, 0); 
+    color: white;
+    padding: 9px 35px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+.hero-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    cursor: pointer;
+}
+
+.main input{
+    padding:  7px 101px 8px 14px; 
+    font-family: 900;
+    font-size: 12px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.2);
+    border: 1px solid rgba(251, 241, 241, 0.5);
+}
+
+.btn-red-sm{
+    background-color: red;
+    color: rgb(255, 255, 255);
+    padding: 8px 15px;
+    border-radius: 3px;
+    border: none;
+}
+
+ .ash{
+      box-sizing: border-box;
+    overflow-x: hidden;
+    position: relative;
+    height: 6.25rem;
+    z-index: 1;
+    height: 100px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+} 
+
+
+
+.null{
+        box-sizing: border-box;
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    top: 0;
+    margin: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: solid .25rem transparent;
+    border-top-left-radius: 100% 70%;
+    border-top-right-radius: 100% 70%;
+    border-bottom: none;
+    background: radial-gradient(50% 500% at 50% -420%, rgb(53 79 184 / 40%) 80%, rgb(35 58 220 / 10%) 100%), #151516;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+
+.ash::before{
+        content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin-top: -.25rem;
+    border-radius: inherit;
+    background: linear-gradient(to right, rgba(33, 13, 22, 1) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 84%);
+}
+
+.trend{
+    font-family: unset;
+    font-size: 1.125rem;
+    font-weight: 500;
+    /* width: 100px;
+    height: 30px; */
+        margin-block-start: 0;
+    margin-block-end: 0;
+    margin: 0;
+    padding: 0;
+    color: rgb(255, 255, 255);
+}
+
+.win{
+        margin-top: 0.75rem;
+}
+
+.with{
+    default-ltr-iqcdef-cache-dn1fyv {
+    margin-bottom: 3.5rem;
+}
+
+.default-ltr-iqcdef-cache-dn1fyv {
+    width: 100%;
+}
+.default-ltr-iqcdef-cache-btvnfz * {
+    box-sizing: border-box;
+}
+}
+
+
+
+
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float and Clear</title>
+    <style>
+
+        .card{
+            border: 2px solid red;
+        }
+
+        .cards{
+            border: 2px solid black;
+            /* for overflow container */
+            display: flow-root;
+        }
+        img{
+           float: left;
+           
+        
+        }
+
+        .card:nth-child(3){
+            background-color: bisque;
+            clear: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img src="https://www.pixelstalk.net/wp-content/uploads/2016/07/Nature-wallpapers-hd-backgroud-1080p.jpg" alt="" width="200px" height="250px">
+        <div class="card"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam ipsa distinctio rem explicabo perferendis, totam repudiandae? Voluptatem sint, eos iure consequuntur minus eius facere. Officia eaque eos cum facere laborum, similique fuga atque quod?</p></div>
+        <div class="card"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nemo modi labore sunt, illo consectetur sed, aliquam nulla repellendus sequi, explicabo eius architecto quasi esse dolores. Suscipit fugit excepturi itaque quisquam aliquid eligendi id?</p></div>
+        <div class="card"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim officia repellat tempora incidunt et voluptate nemo temporibus? Dolore, voluptates similique iusto eius amet aliquam vitae incidunt ea distinctio dolor, ipsa tempore nihil doloremque. Perspiciatis Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis necessitatibus, accusamus hic fugiat cumque nihil molestiae eaque delectus pariatur, blanditiis rerum, in laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, nam molestiae excepturi culpa commodi architecto aperiam nemo veniam sit quasi, nobis quis quidem, officiis dignissimos. Delectus harum, beatae quidem natus atque molestiae. Autem perferendis vero minus, nobis alias aperiam quis temporibus eius obcaecati, assumenda adipisci.</p></div>
+     
+    </div>
+    
+</body>
+</html>

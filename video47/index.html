@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Using flexbox</title>
+    <style>
+        .logo {
+            width: 70px;
+            height: 70px;
+            background-color: rgb(0, 0, 0);
+            border-radius: 200px;
+            color: aqua;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .right ul {
+            display: flex;
+            gap: 34px;
+            color: rgb(58, 30, 240);
+            font-weight: 1000;
+
+        }
+
+
+        .right ul li {
+            list-style: none;
+        }
+
+        .anu {
+            color: rgb(0, 0, 255);
+            text-align: center;
+            font-style: italic;
+            font-weight: bolder;
+
+        }
+
+        .anki {
+            color: rgb(241, 6, 6);
+            font-weight: bolder;
+            font-size: x-large;
+            align-items: center;
+            margin-left: -23px;
+
+        }
+
+        .rest {
+            text-align: center;
+            font-weight: bolder;
+        }
+
+        .box {
+            background-color: black;
+            height: 20px;
+            width: 20px;
+        }
+
+        .box1 {
+            background-color: black;
+            transform: rotate(50deg);
+            height: 20px;
+            width: 20px;
+            margin-left: -54px;
+
+
+
+
+        }
+
+        .box3 {
+            height: 15px;
+            width: 50px;
+            background-color: red;
+            border-radius: 4px;
+        }
+
+        .first{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            margin: 40px;
+            font-family: sans-serif;
+        }
+
+        .first span{
+            font-size: 30px;
+            background-color: rgb(227, 18, 18);
+        }
+
+        section span img{
+                width: 82px;
+                margin: 0 23px;
+        }
+
+        .first p{
+            font-size: 23px;
+            width: 44vw;
+            text-align: center;
+        }
+
+        .btn  {
+            background-color: rgb(0, 255, 255);
+            /* padding: 14px 16px; */
+            color: aliceblue;
+            font-weight: 900;
+            border-radius: 3px;
+            border: none;
+            font-size: large;
+            margin: 12px;
+            cursor: pointer;
+        }
+
+        .red{
+            background-color: red;
+        }
+
+        .green{
+            background-color: green;
+        }
+
+        .btn a{
+            text-decoration: none;
+            color: white;
+        }
+
+       .sec{
+        background-color: rgb(165, 164, 225);
+        font-weight: 600;
+        font-family: sans-serif;
+        font-size: 30px;
+        
+       }
+
+       .flex{
+        display: flex;
+       }
+
+       .small{
+        font-size: 12px;
+       }
+
+       .second{
+           max-width: 50vw;
+           margin: auto;
+            
+       }
+
+       .item{
+        padding: 23px;
+        background-color: rgb(236, 238, 234);
+        border-radius: 12px;
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       }
+
+       .item-countary{
+            font-weight: 700;
+            text-align: center;
+            padding-bottom: 36px;
+       }
+
+       .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 12px;
+
+        
+       }
+
+       .download:nth-child(1){
+        font-size: 23px;
+       
+        
+       }
+
+       .download{
+        display: flex;
+        font-family: sans-serif;
+        gap: 10px;
+        align-items: center;
+       }
+
+       @media screen and (max-width: 900px) {
+        .grid{
+            background-color: red;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap:12px
+        }
+       }
+       
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <div class="anu">G.P</div>
+                <div class="anki">Restraunt</div>
+                <div class="rest">24/7</div>
+            </div>
+
+            <div class="right">
+                <ul>
+                    <li><b>Products</li></b>
+                    <li><b>Pricing</li></b>
+                    <li><b>Resourcess</b></li>
+                    <li><b>About Us</b></li>
+                    <div>
+                        <li class="box"></li>
+                    </div>
+                    <div>
+                        <li class="box1"></li>
+                    </div>
+                    <div <li class="box2">
+                        </li>
+                    </div>
+
+
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="first">
+            <span>Download <b>G.P Restraunt</b> 24/7 App For Enjoying GHAR KA" KHANA Anytime And Anything </span>
+            <p class="sec">Download AND Try your Food Before you buy it</p>
+            <div>
+                <button class="btn">
+                    DOWNLOAD THE APP
+                </button>
+            </div>
+        </section>
+
+        <section class="second">
+            <div class="download">
+                <span>Download the App</span>
+                <span class="small">v2026. Opening in o8/24/2o26 </span>
+            </div>
+
+            <div class="grid">
+                <div class="item">
+                <div class="item-countary">INDIAN</div>
+                <button class="btn green"><a href="/ue indian">Veg</a></button>
+                <button class="btn red"><a href="/ue indian">Non Veg</a></button>
+            </div>
+
+             <div class="item">
+                <div class="item-countary">ITELIAN</div>
+                <button class="btn green">Veg</button>
+                <button class="btn red">Non Veg</button>
+             </div> 
+             
+              <div class="item">
+                <div class="item-countary">CHINESE</div>
+                <button class="btn green">Veg</button>
+                <button class="btn red">Non Veg</button>
+             </div>   
+
+              <div class="item">
+                <div class="item-countary">RAJISTHAN</div>
+                <button class="btn green">Veg</button>
+                <button class="btn red">Non Veg</button>
+             </div>   
+
+              <div class="item">
+                <div class="item-countary">SOUTH INDIAN</div>
+                <button class="btn green">Veg</button>
+                <button class="btn red">Non Veg</button>
+             </div>   
+
+              <div class="item">
+                <div class="item-countary">INDIAN</div>
+                <button class="btn green">Veg</button>
+                <button class="btn red">Non Veg</button>
+             </div>  
+             
+              <div class="item">
+                <div class="item-countary">INDIAN</div>
+                <button class="btn green">Veg</button>
+                <button class="btn red">Non Veg</button>
+             </div>   
+
+              <div class="item">
+                <div class="item-countary">INDIAN</div>
+                <button class="btn green">Veg</button>
+                <button class="btn red">Non Veg</button>
+
+                
+
+                
+             </div>   
+
+              <div class="item">
+                <div class="item-countary">INDIAN</div>
+                <button class="btn green">Veg</button>
+                <button class="btn red">Non Veg</button>
+                
+
+
+        </section>
+    </main>
+</body>
+
+</html>

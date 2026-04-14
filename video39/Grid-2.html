@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        body {
+            background-color: rgb(192, 218, 218);
+        }
+
+        .container {
+            height: 60vh;
+            width: 80vw;
+            border: 3px solid black;
+            display: grid;
+            /* gap: 34px; */
+            row-gap: 55px;
+            column-gap: 45px;
+             justify-items: center; /*also change justify items  */
+            align-items: center;
+            place-content: center;
+
+            /* grid-template-columns: [Anushka]  120px [Anjali] 100px [deepa]; */
+            /* grid-template-rows: 100px 100px 100px; */
+            /* grid-template-columns: 1fr 1fr 1fr; */
+             grid-template-columns: repeat(4, minmax(100px, 1fr)); 
+             /* grid-template-columns: repeat(40px 40px); */
+             /* grid-template-rows: repeat(40px 30px); */
+            /*fr is a unit which is  specially used in a grid which means pure grid ka 1fraction 1fraction 1fraction */
+
+
+        }
+
+        .item {
+            border: 1px solid red;
+            height: 55px;
+            width: 55px;
+            background-color: aliceblue;
+        }
+
+        .item-4 {
+            /* grid-row: 1/2; */
+            /* or you can do */
+            /* grid-row-start: 1;
+            grid-row-end: 2;
+
+            /* same thing */
+            grid-column: 1/2; 
+        }
+
+        .item-1 {
+            /* grid-row: 1/2;
+            grid-column: Anushka/deepa; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item item-1">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item item-4">4</div>
+        <div class="item">5</div>
+    </div>
+
+</body>
+
+</html>

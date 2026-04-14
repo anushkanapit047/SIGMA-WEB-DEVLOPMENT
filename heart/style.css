@@ -1,0 +1,27 @@
+* {
+    margin: 3px;
+    padding: 0;
+}
+
+html, body {
+    overflow: hidden;
+}
+
+body {
+    position: relative;
+    background: #b72626;
+}
+
+id title {
+    position: absolute;
+    color: #b83333;
+    font-size: 2.5rem;
+    text-align: center;
+    left: 50%;
+    top: 6%;
+    transform: translateX(-50%);
+    letter-spacing: 20px;
+    text-transform: lowercase;
+    font-size: larger;
+    color: bisque;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Using flexbox</title>
+    <style>
+        .logo{
+            width: 70px;
+            height: 70px;
+            background-color: rgb(0, 0, 0);
+            border-radius: 200px;
+            color: aqua;
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .right ul
+        {
+            display: flex;
+            gap: 34px;
+        
+        }
+
+
+        .right ul li{
+            list-style: none;
+        }
+
+        .anu{
+            color: rgb(0, 0, 255);
+            text-align: center;
+            font-style: italic;
+            font-weight: bolder;
+
+        }
+        .anki{
+            color: rgb(241, 6, 6);
+            font-weight: bolder;
+            font-size: x-large;
+            align-items: center;
+            margin-left: -23px;
+            
+           
+
+            
+        }
+
+        .box {
+            background-color: black;
+            height: 20px;
+            width: 20px;
+        }
+
+        .box1{
+            background-color: black;
+            transform: rotate(50deg);
+            height:20px;
+            width: 20px;
+            margin-left: -54px;
+           
+            
+        }
+
+        
+
+       
+
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+          <div class="logo"> <div class="anu">Anu$anKit </div> <div class="anki">Restaurent</div></div>  
+          
+          <div class="right">
+               <ul>
+                <li>Products</li>
+                <li>Pricing</li>
+                <li>Resourcess</li>
+                <li>About Us</li>
+              <div ><li class="box"></li></div>
+            <div><li class="box1"></li></div>   
+            <div <li class="box2"></li></div>
+            
+             
+               </ul> 
+
+          </div>  
+        </nav>
+    </header>
+    
+</body>
+</html>

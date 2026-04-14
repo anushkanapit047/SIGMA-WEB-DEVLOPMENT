@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS selectors</title>
+    <style>
+        /* .box:first-child{
+            background-color: chartreuse; 
+        }*/
+
+      
+        
+
+        .box::first-line{
+            color: rgb(221, 36, 51);
+        }
+        
+        .boxes *{
+            color: blue;
+            border: 3px solid black;
+        }
+
+       p, a, .box, [data-color="primary"]{
+            padding-top: 45px;
+        }
+
+         .box:nth-child(even){
+            color: darkgreen;
+            background-color: antiquewhite; 
+        }
+        .box:nth-child(odd){
+            color: blue;
+            background-color: aquamarine;} 
+
+            .box:nth-last-child(1)
+            {
+                background-color: blueviolet;
+            
+            }
+
+            .boxes::before{
+                content: "Anushka is good";
+                background-color: bisque;
+                color: black;
+            }
+
+            .boxes::after{
+                content: "B.tech 3rd year";
+                background-color: bisque;
+                color: black;
+                
+            }
+        
+            
+            ::selection{
+                color: rgb(27, 27, 31);
+                background-color: rgb(162, 16, 170);
+            }
+            .box::first-letter{
+                color: blue;
+                font-size: 45px;
+            }
+
+           input::placeholder{
+         color: aqua;
+           }
+            
+
+          
+        
+
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-color="primary"  class="box">Hey i am a box Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita ad necessitatibus omnis inventore soluta sequi, cum modi ea deserunt. Blanditiis officia praesentium, unde a maiores reiciendis, veniam pariatur iusto doloribus in deleniti laborum inventore excepturi? Dolore, ab. Recusandae, a fuga qui odit voluptate quisquam aut iusto? Adipisci libero dicta impedit provident unde!</div>
+        <div class="box">Hey i am a box Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae sed nostrum obcaecati adipisci. Enim dignissimos ad a illum, culpa suscipit velit, deleniti rem ratione iure pariatur et dolores, aliquid ea eum voluptatum quos voluptate optio ullam fugiat. Cum, officia dolorem ducimus autem neque mollitia dolores.</div>
+       
+        <div class="box">Hey i am a box</div>
+         <input type="text" placeholder="Type your name here ">
+    </div>
+    
+</body>
+</html>

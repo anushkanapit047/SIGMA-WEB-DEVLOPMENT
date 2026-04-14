@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform</title>
+
+    <style>
+        .box {
+            height: 50px;
+            width: 50px;
+            background-color: beige;
+            border: 2px solid black;
+            /* transform: rotate(40deg); */
+            /* transform: rotate(0,5turn); */
+            /* transform: rotatex(40deg); */
+            /* transform: rotatey(40deg); */
+            /* transform: skewx(40deg); */
+            /* transform: skewy(40deg); */
+            /* transform: rotatez(10deg);  */
+            transform: translatey(100%) skewx(40deg) translatex(45%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: larger;
+            font-weight: bolder;
+
+
+
+
+
+
+
+
+        }
+
+        .boxes {
+            height: 50px;
+            width: 50px;
+            background-color: beige;
+            border: 2px solid black;
+            transform: rotate(40deg);
+            transform: translatey(-100%) skewx(-40deg) translatex(45%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: larger;
+            font-weight: bolder;
+        }
+
+        .boxes1 {
+            height: 50px;
+            width: 50px;
+            background-color: beige;
+            border: 2px solid black;
+            transform: rotate(40deg);
+            transform: translate(100%) skewx(-40deg) translatex(-50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: larger;
+            font-weight: bolder;
+        }
+
+        .boxes2 {
+            height: 50px;
+            width: 50px;
+            background-color: beige;
+            border: 2px solid black;
+            /* transform: rotate(40deg); */
+            /* transform: rotate(0,5turn); */
+            /* transform: rotatex(40deg); */
+            /* transform: rotatey(40deg); */
+            /* transform: skewx(40deg); */
+            /* transform: skewy(40deg); */
+            /* transform: rotatez(10deg);  */
+            transform: translatey(0%) skewx(40deg) translatex(45%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: larger;
+            font-weight: bolder;
+        }
+
+
+
+        ul {
+            display: flex;
+
+        }
+
+        .dox {
+            height: 50px;
+            width: 50px;
+            background-color: beige;
+            border: 2px solid black;
+            /* transform: rotate(40deg); */
+            /* transform: rotate(0,5turn); */
+            /* transform: rotatex(40deg); */
+            /* transform: rotatey(40deg); */
+            /* transform: skewx(40deg); */
+            /* transform: skewy(40deg); */
+            /* transform: rotatez(10deg);  */
+            transform: translatey(100%) skewx(-40deg) translatex(120%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: larger;
+            font-weight: bolder;
+        }
+
+        .doxes {
+            height: 50px;
+            width: 50px;
+            background-color: beige;
+            border: 2px solid black;
+            transform: rotate(40deg);
+            transform: translatey(-100%) skewx(40deg) translatex(120%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: larger;
+            font-weight: bolder;
+        }
+
+        .doxes1 {
+            height: 50px;
+            width: 50px;
+            background-color: beige;
+            border: 2px solid black;
+            transform: rotate(40deg);
+            transform: translatex(00%) skewx(40deg) translatex(120%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: larger;
+            font-weight: bolder;
+        }
+
+        .doxes2 {
+            height: 50px;
+            width: 50px;
+            background-color: beige;
+            border: 2px solid black;
+            /* transform: rotate(40deg); */
+            /* transform: rotate(0,5turn); */
+            /* transform: rotatex(40deg); */
+            /* transform: rotatey(40deg); */
+            /* transform: skewx(40deg); */
+            /* transform: skewy(40deg); */
+            /* transform: rotatez(10deg);  */
+            transform: translatey(-00%) skewx(-40deg) translatex(120%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: larger;
+            font-weight: bolder;
+
+        }
+
+        ul li {
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>
+
+            <div class="box">anu</div>
+            <div class="boxes">pink</div>
+            <div class="boxes1">rose</div>
+            <div class="boxes2">love</div>
+
+
+
+            </div>
+        </li>
+
+
+
+        <li>
+
+            <div class="dox">anu</div>
+            <div class="doxes">pink</div>
+            <div class="doxes1">rose</div>
+            <div class="doxes2">love</div>
+
+
+
+            </div>
+        </li>
+
+    </ul>
+</body>
+<style>
+    .box {
+        height: 50px;
+        width: 50px;
+        background-color: beige;
+        border: 2px solid black;
+        /* transform: rotate(40deg); */
+        /* transform: rotate(0,5turn); */
+        /* transform: rotatex(40deg); */
+        /* transform: rotatey(40deg); */
+        /* transform: skewx(40deg); */
+        /* transform: skewy(40deg); */
+        /* transform: rotatez(10deg);  */
+        transform: translatey(100%) skewx(40deg) translatex(45%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: larger;
+        font-weight: bolder;
+
+
+
+
+
+
+
+
+    }
+
+    .boxes {
+        height: 50px;
+        width: 50px;
+        background-color: beige;
+        border: 2px solid black;
+        transform: rotate(40deg);
+        transform: translatey(-100%) skewx(-40deg) translatex(45%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: larger;
+        font-weight: bolder;
+    }
+
+    .boxes1 {
+        height: 50px;
+        width: 50px;
+        background-color: beige;
+        border: 2px solid black;
+        transform: rotate(40deg);
+        transform: translate(100%) skewx(-40deg) translatex(-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: larger;
+        font-weight: bolder;
+    }
+
+    .boxes2 {
+        height: 50px;
+        width: 50px;
+        background-color: beige;
+        border: 2px solid black;
+        /* transform: rotate(40deg); */
+        /* transform: rotate(0,5turn); */
+        /* transform: rotatex(40deg); */
+        /* transform: rotatey(40deg); */
+        /* transform: skewx(40deg); */
+        /* transform: skewy(40deg); */
+        /* transform: rotatez(10deg);  */
+        transform: translatey(0%) skewx(40deg) translatex(45%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: larger;
+        font-weight: bolder;
+    }
+
+
+
+    ul {
+        display: flex;
+
+    }
+
+    .dox {
+        height: 50px;
+        width: 50px;
+        background-color: beige;
+        border: 2px solid black;
+        /* transform: rotate(40deg); */
+        /* transform: rotate(0,5turn); */
+        /* transform: rotatex(40deg); */
+        /* transform: rotatey(40deg); */
+        /* transform: skewx(40deg); */
+        /* transform: skewy(40deg); */
+        /* transform: rotatez(10deg);  */
+        transform: translatey(100%) skewx(-40deg) translatex(120%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: larger;
+        font-weight: bolder;
+    }
+
+    .doxes {
+        height: 50px;
+        width: 50px;
+        background-color: beige;
+        border: 2px solid black;
+        transform: rotate(40deg);
+        transform: translatey(-100%) skewx(40deg) translatex(120%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: larger;
+        font-weight: bolder;
+    }
+
+    .doxes1 {
+        height: 50px;
+        width: 50px;
+        background-color: beige;
+        border: 2px solid black;
+        transform: rotate(40deg);
+        transform: translatex(00%) skewx(40deg) translatex(120%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: larger;
+        font-weight: bolder;
+    }
+
+    .doxes2 {
+        height: 50px;
+        width: 50px;
+        background-color: beige;
+        border: 2px solid black;
+        /* transform: rotate(40deg); */
+        /* transform: rotate(0,5turn); */
+        /* transform: rotatex(40deg); */
+        /* transform: rotatey(40deg); */
+        /* transform: skewx(40deg); */
+        /* transform: skewy(40deg); */
+        /* transform: rotatez(10deg);  */
+        transform: translatey(-00%) skewx(-40deg) translatex(120%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: larger;
+        font-weight: bolder;
+
+    }
+</style>
+</head>
+
+<body>
+    <ul>
+        <li>
+
+            <div class="box">anu</div>
+            <div class="boxes">pink</div>
+            <div class="boxes1">rose</div>
+            <div class="boxes2">love</div>
+
+
+
+            </div>
+        </li>
+
+
+
+        <li>
+
+            <div class="dox">anu</div>
+            <div class="doxes">pink</div>
+            <div class="doxes1">rose</div>
+            <div class="doxes2">love</div>
+
+
+
+            </div>
+        </li>
+
+    </ul>
+</body>
+<style>
+    .box {
+        height: 50px;
+        width: 50px;
+        background-color: beige;
+        border: 2px solid black;
+        /* transform: rotate(40deg); */
+        /* transform: rotate(0,5turn); */
+        /* transform: rotatex(40deg); */
+        /* transform: rotatey(40deg); */
+        /* transform: skewx(40deg); */
+        /* transform: skewy(40deg); */
+        /* transform: rotatez(10deg);  */
+        transform: translatey(100%) skewx(40deg) translatex(45%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: larger;
+        font-weight: bolder;
+
+
+
+
+
+
+
+
+    }
+
+    .boxes {
+        height: 50px;
+        width: 50px;
+        background-color: beige;
+        border: 2px solid black;
+        transform: rotate(40deg);
+        transform: translatey(-100%) skewx(-40deg) translatex(45%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: larger;
+        font-weight: bolder;
+    }
+
+    .boxes1 {
+        height: 50px;
+        width: 50px;
+        background-color: beige;
+        border: 2px solid black;
+        transform: rotate(40deg);
+        transform: translate(100%) skewx(-40deg) translatex(-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: larger;
+        font-weight: bolder;
+    }
+
+    .boxes2 {
+        height: 50px;
+        width: 50px;
+        background-color: beige;
+        border: 2px solid black;
+        /* transform: rotate(40deg); */
+        /* transform: rotate(0,5turn); */
+        /* transform: rotatex(40deg); */
+        /* transform: rotatey(40deg); */
+        /* transform: skewx(40deg); */
+        /* transform: skewy(40deg); */
+        /* transform: rotatez(10deg);  */
+        transform: translatey(0%) skewx(40deg) translatex(45%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: larger;
+        font-weight: bolder;
+    }
+
+
+
+    ul {
+        display: flex;
+
+    }
+
+    .dox {
+        height: 50px;
+        width: 50px;
+        background-color: beige;
+        border: 2px solid black;
+        /* transform: rotate(40deg); */
+        /* transform: rotate(0,5turn); */
+        /* transform: rotatex(40deg); */
+        /* transform: rotatey(40deg); */
+        /* transform: skewx(40deg); */
+        /* transform: skewy(40deg); */
+        /* transform: rotatez(10deg);  */
+        transform: translatey(100%) skewx(-40deg) translatex(120%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: larger;
+        font-weight: bolder;
+    }
+
+    .doxes {
+        height: 50px;
+        width: 50px;
+        background-color: beige;
+        border: 2px solid black;
+        transform: rotate(40deg);
+        transform: translatey(-100%) skewx(40deg) translatex(120%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: larger;
+        font-weight: bolder;
+    }
+
+    .doxes1 {
+        height: 50px;
+        width: 50px;
+        background-color: beige;
+        border: 2px solid black;
+        transform: rotate(40deg);
+        transform: translatex(00%) skewx(40deg) translatex(120%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: larger;
+        font-weight: bolder;
+    }
+
+    .doxes2 {
+        height: 50px;
+        width: 50px;
+        background-color: beige;
+        border: 2px solid black;
+        /* transform: rotate(40deg); */
+        /* transform: rotate(0,5turn); */
+        /* transform: rotatex(40deg); */
+        /* transform: rotatey(40deg); */
+        /* transform: skewx(40deg); */
+        /* transform: skewy(40deg); */
+        /* transform: rotatez(10deg);  */
+        transform: translatey(-00%) skewx(-40deg) translatex(120%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: larger;
+        font-weight: bolder;
+
+    }
+</style>
+</head>
+
+<body>
+    <ul>
+        <li>
+
+            <div class="box">anu</div>
+            <div class="boxes">pink</div>
+            <div class="boxes1">rose</div>
+            <div class="boxes2">love</div>
+
+
+
+            </div>
+        </li>
+
+
+
+        <li>
+
+            <div class="dox">anu</div>
+            <div class="doxes">pink</div>
+            <div class="doxes1">rose</div>
+            <div class="doxes2">love</div>
+
+
+
+            </div>
+        </li>
+
+    </ul>
+</body>
+
+
+
+</html>
