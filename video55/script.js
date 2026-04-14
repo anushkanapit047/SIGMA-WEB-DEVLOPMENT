@@ -3,7 +3,7 @@ console.log("this is video 55")
 let b = 25;
 let c = 4;
 let d = "anushka";
-let a = 20;
+var a = 20;
 // var 55a = 20; // this is not valid because variable name cannot start with a number  
 
 
