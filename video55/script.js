@@ -19,3 +19,23 @@ console.log(typeof a , typeof b , typeof c , typeof d)
 }
 console.log(a)
 // const a1 = 6;
+
+let x = 10;
+let y = true;
+let z = "anushka";
+let p = null;
+  
+console.log(x , y , z , p)
+console.log(typeof x , typeof y , typeof z , typeof p )
+
+let o = {
+    "name": "anushka",
+    "age": 25,
+    "job company": "google"
+}
+
+console.log(o);
+o.salary = "1000000";
+console.log(o);
+o.salary = "5000000000"
+console.log(o);
